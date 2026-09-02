@@ -22,7 +22,8 @@
         </li>
         <li class="nav-item">
             <a href="{{ route('pages.kategori') }}"
-                class="nav-link {{ request()->routeIs('pages.kategori') ? 'active' : '' }}"><i class="bi bi-card-list"></i>
+                class="nav-link {{ request()->routeIs('pages.kategori') ? 'active' : '' }}"><i
+                    class="bi bi-card-list"></i>
                 Categories</a>
         </li>
         <li class="nav-item">
@@ -37,7 +38,9 @@
                 Orders</a>
         </li>
         <li class="nav-item">
-            <a href="#" class="nav-link"><i class="bi bi-credit-card-fill"></i> Payments</a>
+            <a href="{{ route('pages.payment') }}"
+                class="nav-link {{ request()->routeIs('pages.payment') ? 'active' : '' }}"><i
+                    class="bi bi-credit-card-fill"></i> Payments</a>
         </li>
     </ul>
 </nav>

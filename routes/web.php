@@ -33,3 +33,6 @@ Route::delete('/produk/{produk}', [ProdukController::class, 'destroy'])->name('p
 // order
 Route::get('/order', [TransaksiController::class, 'index'])->name('pages.order');
 Route::post('/Transaksi', [TransaksiController::class, 'store'])->name('transaksi.store');
+
+// payments
+Route::get('/payment', [TransaksiController::class, 'payment'])->name('pages.payment');

@@ -18,6 +18,12 @@ class TransaksiController extends Controller
         return view('pages.order', compact('data', 'produk'));
     }
 
+    public function payment()
+    {
+        $data = Transaksi::latest()->get();
+        return view('pages.payment', compact('data'));
+    }
+
     public function create()
     {
         //

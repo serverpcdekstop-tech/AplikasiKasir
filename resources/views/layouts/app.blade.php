@@ -49,7 +49,7 @@
 
         <!-- ===== FOOTER ===== -->
         <footer class="footer d-flex flex-wrap justify-content-between align-items-center gap-2">
-            <span>&copy; 2026 <strong>Nexus</strong> — Crafted with <i class="bi bi-heart-fill"
+            <span>&copy; 2026 <strong>Break Coffe</strong> — Crafted with <i class="bi bi-heart-fill"
                     style="color:var(--accent-4);font-size:12px;"></i></span>
             <ul class="footer-links">
                 <li><a href="#">Privacy</a></li>
