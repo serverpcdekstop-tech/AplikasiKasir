@@ -18,6 +18,11 @@
     <div class="sidebar-section-title mt-3">Management</div>
     <ul class="nav flex-column">
         <li class="nav-item">
+            <a href="{{ route('pages.customer') }}"
+                class="nav-link {{ request()->routeIs('pages.customer') ? 'active' : '' }}"><i class="bi
+                    bi-tv"></i> Tampilan layar</a>
+        </li>
+        <li class="nav-item">
             <a href="#" class="nav-link"><i class="bi bi-people-fill"></i> Users</a>
         </li>
         <li class="nav-item">
@@ -34,7 +39,8 @@
         </li>
         <li class="nav-item">
             <a href="{{ route('pages.order') }}"
-                class="nav-link {{ request()->routeIs('pages.order') ? 'active' : '' }}"><i class="bi bi-cart-fill"></i>
+                class="nav-link {{ request()->routeIs('pages.order') ? 'active' : '' }}"><i
+                    class="bi bi-cart-fill"></i>
                 Orders</a>
         </li>
         <li class="nav-item">

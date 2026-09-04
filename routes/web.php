@@ -36,3 +36,7 @@ Route::post('/Transaksi', [TransaksiController::class, 'store'])->name('transaks
 
 // payments
 Route::get('/payment', [TransaksiController::class, 'payment'])->name('pages.payment');
+
+
+// layar pelanggan
+Route::get('/customer', [ProdukController::class, 'customer'])->name('pages.customer');

@@ -20,6 +20,19 @@ class ProdukController extends Controller
         return view('pages.produk', compact('data', 'kategori'));
     }
 
+    public function customer()
+    {
+        $data = Produk::with('kategori')
+            ->where('status', 1)
+            ->where('stok', '>', 0)
+            ->latest()
+            ->get();
+
+        $kategori = Kategori::latest()->get();
+
+        return view('pages.customer', compact('data', 'kategori'));
+    }
+
     /**
      * Show the form for creating a new resource.
      */
