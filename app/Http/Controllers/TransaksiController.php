@@ -20,7 +20,9 @@ class TransaksiController extends Controller
 
     public function payment()
     {
-        $data = Transaksi::latest()->get();
+        $data = Transaksi::with('transaksi_detail.produk')
+            ->latest()
+            ->get();
         return view('pages.payment', compact('data'));
     }
 
