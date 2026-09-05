@@ -4,63 +4,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Menu - Break Coffee</title>
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
     <link rel="stylesheet" href="customer.css">
 </head>
-
 <body>
-
     <div class="bg-pattern"></div>
-
     <div class="menu-screen">
-
         {{-- HEADER --}}
         <header class="header">
-
             {{-- BRAND --}}
             <div class="brand">
-
                 <div class="brand-left">
-
-                    <div class="logo">
-                        ☕
-                    </div>
-
+                    <div class="logo">☕</div>
                     <div>
                         <div class="brand-name">
                             Break Coffee
                         </div>
-
                         <div class="brand-subtitle">
                             Fresh Coffee • Good Mood
                         </div>
                     </div>
-
                 </div>
-
                 {{-- CLOCK --}}
                 <div id="clock">
-
                     <i class="far fa-clock"></i>
-
                     <span id="clock-text">
                         00:00:00
                     </span>
-
                 </div>
-
             </div>
-
-
             {{-- MENU TITLE --}}
             <div class="menu-title">
 
@@ -77,17 +53,13 @@
                 </p>
 
             </div>
-
-
             {{-- CATEGORY --}}
             <div class="categories">
 
                 <button type="button" class="category-btn active" data-category="all">
 
                     <i class="fas fa-th-large"></i>
-
                     Semua
-
                 </button>
 
                 @foreach ($kategori as $kat)
@@ -123,21 +95,16 @@
                                     <span>No Image</span>
                                 </div>
                             @endif
-
-
                             {{-- CATEGORY --}}
                             @if ($item->kategori)
                                 <div class="category-badge">
                                     {{ $item->kategori->nama }}
                                 </div>
                             @endif
-
                         </div>
-
 
                         {{-- PRODUCT BODY --}}
                         <div class="product-body">
-
                             <div class="product-name">
                                 {{ $item->nama }}
                             </div>
